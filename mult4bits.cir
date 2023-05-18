@@ -1,0 +1,38 @@
+* D:\eSim_tut\files\mult4bits\mult4bits.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 05/18/23 19:45:47
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U17  Net-_U17-Pad1_ Net-_U17-Pad2_ Net-_U17-Pad3_ Net-_U17-Pad4_ Net-_U17-Pad5_ Net-_U17-Pad6_ Net-_U17-Pad7_ Net-_U17-Pad8_ Net-_U17-Pad9_ Net-_U17-Pad10_ Net-_U17-Pad11_ Net-_U17-Pad12_ Net-_U17-Pad13_ Net-_U17-Pad14_ Net-_U17-Pad15_ Net-_U17-Pad16_ mult4bits		
+U18  1 2 3 4 Net-_U17-Pad1_ Net-_U17-Pad2_ Net-_U17-Pad3_ Net-_U17-Pad4_ adc_bridge_4		
+U19  5 6 7 8 Net-_U17-Pad5_ Net-_U17-Pad6_ Net-_U17-Pad7_ Net-_U17-Pad8_ adc_bridge_4		
+v3  3 GND pulse		
+v5  2 GND pulse		
+v7  1 GND pulse		
+v1  4 GND pulse		
+v4  6 GND pulse		
+v6  7 GND pulse		
+v8  8 GND pulse		
+v2  5 GND pulse		
+U5  8 plot_v1		
+U6  7 plot_v1		
+U7  6 plot_v1		
+U8  5 plot_v1		
+U4  4 plot_v1		
+U3  3 plot_v1		
+U2  2 plot_v1		
+U1  1 plot_v1		
+U10  010 plot_v1		
+U9  o9 plot_v1		
+U11  o11 plot_v1		
+U12  o12 plot_v1		
+U14  o14 plot_v1		
+U13  o13 plot_v1		
+U15  o15 plot_v1		
+U16  016 plot_v1		
+U20  Net-_U17-Pad9_ Net-_U17-Pad10_ Net-_U17-Pad11_ Net-_U17-Pad12_ Net-_U17-Pad13_ Net-_U17-Pad14_ Net-_U17-Pad15_ Net-_U17-Pad16_ o9 010 o11 o12 o13 o14 o15 016 dac_bridge_8		
+
+.end
