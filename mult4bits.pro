@@ -1,4 +1,4 @@
-update=05/18/23 11:16:35
+update=05/20/23 22:31:07
 version=1
 last_client=eeschema
 [general]
@@ -72,7 +72,7 @@ LibName38=eSim_Ngveri
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=C:/Users/roshan/Desktop/Internships/Esim/sche_plot/
+PlotDirectoryName=C:/Users/roshan/Desktop/Fellowship/Esim-general/sche_plot/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
