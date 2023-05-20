@@ -53,17 +53,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L mult4bits U17
-U 1 1 6465AFDC
-P 2250 5450
-F 0 "U17" H 5100 7250 60  0000 C CNN
-F 1 "mult4bits" H 5100 7450 60  0000 C CNN
-F 2 "" H 5100 7400 60  0000 C CNN
-F 3 "" H 5100 7400 60  0000 C CNN
-	1    2250 5450
-	1    0    0    -1  
-$EndComp
-$Comp
 L adc_bridge_4 U18
 U 1 1 6465B055
 P 3400 3650
@@ -674,6 +663,17 @@ F 1 "dac_bridge_8" H 6850 3750 60  0000 C CNN
 F 2 "" H 6850 3600 60  0000 C CNN
 F 3 "" H 6850 3600 60  0000 C CNN
 	1    6850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L arraymul4 U17
+U 1 1 6468FB76
+P 2250 5450
+F 0 "U17" H 5100 7250 60  0000 C CNN
+F 1 "arraymul4" H 5100 7450 60  0000 C CNN
+F 2 "" H 5100 7400 60  0000 C CNN
+F 3 "" H 5100 7400 60  0000 C CNN
+	1    2250 5450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

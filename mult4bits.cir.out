@@ -1,6 +1,5 @@
 * d:\esim_tut\files\mult4bits\mult4bits.cir
 
-* u17  net-_u17-pad1_ net-_u17-pad2_ net-_u17-pad3_ net-_u17-pad4_ net-_u17-pad5_ net-_u17-pad6_ net-_u17-pad7_ net-_u17-pad8_ net-_u17-pad9_ net-_u17-pad10_ net-_u17-pad11_ net-_u17-pad12_ net-_u17-pad13_ net-_u17-pad14_ net-_u17-pad15_ net-_u17-pad16_ mult4bits
 * u18  1 2 3 4 net-_u17-pad1_ net-_u17-pad2_ net-_u17-pad3_ net-_u17-pad4_ adc_bridge_4
 * u19  5 6 7 8 net-_u17-pad5_ net-_u17-pad6_ net-_u17-pad7_ net-_u17-pad8_ adc_bridge_4
 v3  3 gnd pulse(0 0 1m 1m 1m 160 160)
@@ -28,18 +27,19 @@ v2  5 gnd pulse(0 0 1m 1m 1m 160 160)
 * u15  o15 plot_v1
 * u16  016 plot_v1
 * u20  net-_u17-pad9_ net-_u17-pad10_ net-_u17-pad11_ net-_u17-pad12_ net-_u17-pad13_ net-_u17-pad14_ net-_u17-pad15_ net-_u17-pad16_ o9 010 o11 o12 o13 o14 o15 016 dac_bridge_8
-a1 [net-_u17-pad1_ net-_u17-pad2_ net-_u17-pad3_ net-_u17-pad4_ ] [net-_u17-pad5_ net-_u17-pad6_ net-_u17-pad7_ net-_u17-pad8_ ] [net-_u17-pad9_ net-_u17-pad10_ net-_u17-pad11_ net-_u17-pad12_ net-_u17-pad13_ net-_u17-pad14_ net-_u17-pad15_ net-_u17-pad16_ ] u17
-a2 [1 2 3 4 ] [net-_u17-pad1_ net-_u17-pad2_ net-_u17-pad3_ net-_u17-pad4_ ] u18
-a3 [5 6 7 8 ] [net-_u17-pad5_ net-_u17-pad6_ net-_u17-pad7_ net-_u17-pad8_ ] u19
-a4 [net-_u17-pad9_ net-_u17-pad10_ net-_u17-pad11_ net-_u17-pad12_ net-_u17-pad13_ net-_u17-pad14_ net-_u17-pad15_ net-_u17-pad16_ ] [o9 010 o11 o12 o13 o14 o15 016 ] u20
-* Schematic Name:                             mult4bits, NgSpice Name: mult4bits
-.model u17 mult4bits(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* u17  net-_u17-pad1_ net-_u17-pad2_ net-_u17-pad3_ net-_u17-pad4_ net-_u17-pad5_ net-_u17-pad6_ net-_u17-pad7_ net-_u17-pad8_ net-_u17-pad9_ net-_u17-pad10_ net-_u17-pad11_ net-_u17-pad12_ net-_u17-pad13_ net-_u17-pad14_ net-_u17-pad15_ net-_u17-pad16_ arraymul4
+a1 [1 2 3 4 ] [net-_u17-pad1_ net-_u17-pad2_ net-_u17-pad3_ net-_u17-pad4_ ] u18
+a2 [5 6 7 8 ] [net-_u17-pad5_ net-_u17-pad6_ net-_u17-pad7_ net-_u17-pad8_ ] u19
+a3 [net-_u17-pad9_ net-_u17-pad10_ net-_u17-pad11_ net-_u17-pad12_ net-_u17-pad13_ net-_u17-pad14_ net-_u17-pad15_ net-_u17-pad16_ ] [o9 010 o11 o12 o13 o14 o15 016 ] u20
+a4 [net-_u17-pad1_ net-_u17-pad2_ net-_u17-pad3_ net-_u17-pad4_ ] [net-_u17-pad5_ net-_u17-pad6_ net-_u17-pad7_ net-_u17-pad8_ ] [net-_u17-pad9_ net-_u17-pad10_ net-_u17-pad11_ net-_u17-pad12_ net-_u17-pad13_ net-_u17-pad14_ net-_u17-pad15_ net-_u17-pad16_ ] u17
 * Schematic Name:                             adc_bridge_4, NgSpice Name: adc_bridge
 .model u18 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
 * Schematic Name:                             adc_bridge_4, NgSpice Name: adc_bridge
 .model u19 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
 * Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
 .model u20 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             arraymul4, NgSpice Name: arraymul4
+.model u17 arraymul4(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
 .tran 0.1e-00 160e-00 0e-00
 
 * Control Statements 
