@@ -2,14 +2,14 @@
 
 * u18  1 2 3 4 net-_u17-pad1_ net-_u17-pad2_ net-_u17-pad3_ net-_u17-pad4_ adc_bridge_4
 * u19  5 6 7 8 net-_u17-pad5_ net-_u17-pad6_ net-_u17-pad7_ net-_u17-pad8_ adc_bridge_4
-v3  3 gnd pulse(0 0 1m 1m 1m 160 160)
-v5  2 gnd pulse(0 0 1m 1m 1m 160 160)
+v3  3 gnd pulse(0 5 1m 1m 1m 20 80)
+v5  2 gnd pulse(0 5 1m 1m 1m 80 160)
 v7  1 gnd pulse(0 0 1m 1m 1m 160 160)
 v1  4 gnd pulse(5 0 1m 1m 1m 80 160)
-v4  6 gnd pulse(0 0 1m 1m 1m 160 160)
+v4  6 gnd pulse(5 0 1m 1m 1m 20 40)
 v6  7 gnd pulse(5 0 1m 1m 1m 40 160)
-v8  8 gnd pulse(0 0 1m 1m 1m 160 160)
-v2  5 gnd pulse(0 0 1m 1m 1m 160 160)
+v8  8 gnd pulse(0 5 1m 1m 1m 80 160)
+v2  5 gnd pulse(0 5 1m 1m 1m 40 40)
 * u5  8 plot_v1
 * u6  7 plot_v1
 * u7  6 plot_v1
